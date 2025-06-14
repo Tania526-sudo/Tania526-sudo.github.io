@@ -1,6 +1,12 @@
 ---
 # Display name
 title: Tetiana Starovoit
+superuser: true
+avatar: avatar.jpg
+role: AI & Water Systems Researcher
+organizations:
+  - name: КПІ / НУВГП
+    url: https://kpi.ua
 
 # Name pronunciation (optional)
 name_pronunciation: Teh-TYAH-nah Stah-roh-VOIT
