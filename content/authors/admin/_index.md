@@ -2,7 +2,7 @@
 # Display name
 title: Tetiana Starovoit
 superuser: true
-avatar: avatar.jpg
+avatar: media/avatar.jpg
 role: AI & Water Systems Researcher
 organizations:
   - name: КПІ / НУВГП
