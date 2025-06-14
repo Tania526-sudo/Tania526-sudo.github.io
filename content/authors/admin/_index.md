@@ -1,29 +1,18 @@
 ---
-# Display name
-title: Tetiana Starovoit
-superuser: true
-avatar: media/avatar.jpg
-role: AI & Water Systems Researcher
-organizations:
-  - name: КПІ / НУВГП
-    url: https://kpi.ua
-
-# Name pronunciation (optional)
-name_pronunciation: Teh-TYAH-nah Stah-roh-VOIT
-
-# Full name (for SEO)
-first_name: Tetiana
-last_name: Starovoit
-
-# Status emoji
-status:
-  icon: 
-
-# Is this the primary user of the site?
+name: Тетяна Старовойт
+role: AI Researcher
+avatar: "media/avatar.png"
+bio: |
+  Hybrid AI researcher working with GNN, PINN, SCADA, and water infrastructure.
 superuser: true
 
-# Highlight the author in author lists? (true/false)
-highlight_name: true
+social:
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/tetiana-starovoit-61b246200/
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/Tania526-sudo
 
 # Role/position/tagline
 role: AI & Water Systems Researcher
