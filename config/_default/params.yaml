@@ -1,0 +1,55 @@
+# SITE SETUP
+# Docs: https://docs.hugoblox.com/
+
+# Appearance
+appearance:
+  mode: system         
+  color: emerald       
+
+# SEO & Analytics
+marketing:
+  seo:
+    site_type: Person
+    local_business_type: ''
+    org_name: 'Tetiana Starovoyt'
+    description: "AI researcher working on hybrid neural networks, smart water infrastructure, and adaptive graph-based modeling."
+    twitter: 'tania_starovoyt'
+  analytics:
+    google_analytics: ''         
+    plausible: ''                
+  verification:
+    google: ''
+    baidu: ''
+
+# Site header
+header:
+  navbar:
+    enable: true
+    blox: "navbar"
+    fixed_to_top: true
+    show_search: true
+    show_theme_chooser: true
+    logo:
+      text: "Tetiana Starovoyt"
+
+# Site footer
+footer:
+  copyright:
+    notice: '© {year} Tetiana Starovoyt. This work is licensed under {license}'
+    license:
+      enable: true
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
+
+# Localization
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '3:04 PM'
+
+# Site features
+features:
+  math:
+    enable: true  
+  privacy_pack:
+    enable: true  

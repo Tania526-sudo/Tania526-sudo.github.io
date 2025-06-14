@@ -1,22 +1,37 @@
-name: Updater (WIP)
+name:  Auto-update WIP branches (Tetiana)
 
 on:
   schedule:
-    - cron: 0 0 * * 0
-  # Allows you to run this workflow manually from the Actions tab on GitHub.
+    - cron: '0 3 * * *'  
   workflow_dispatch:
 
-# Provide permission to clone the repo and deploy it to GitHub Pages
+
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
-  update:
-    if: github.repository_owner == 'HugoBlox'
+  update-wip-branches:
+    if: github.repository_owner == 'Tania526-sudo'
     runs-on: ubuntu-latest
     steps:
-      - uses: HugoBlox/gh-action-updater@v1
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          feed-url: https://hugoblox.com/rss.xml
-          readme-section: news
-          branch: main
+          fetch-depth: 0
+
+      - name: Find WIP branches and update them
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pull and rebase all branches matching wip/*
+        run: |
+          git fetch --all
+          for branch in $(git branch -r | grep 'origin/wip/' | sed 's|origin/||'); do
+            echo "Updating branch: $branch"
+            git checkout $branch
+            git pull --rebase origin main || true
+            git push origin $branch || true
+          done
+

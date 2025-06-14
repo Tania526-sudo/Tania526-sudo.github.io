@@ -1,0 +1,33 @@
+main:
+  - name: About
+    url: /
+    weight: 1
+
+  - name: Research
+    url: /#papers
+    weight: 2
+
+  - name: Talks
+    url: /#talks
+    weight: 3
+
+  - name: News
+    url: /#news
+    weight: 4
+
+  - name: Projects
+    url: projects/
+    weight: 10
+
+  - name: Collaboration
+    url: /#collaboration
+    weight: 15
+
+  - name: Teaching
+    url: teaching/
+    weight: 20
+
+  - name: CV
+    url: uploads/tetiana_starovoyt_cv.pdf
+    weight: 99
+

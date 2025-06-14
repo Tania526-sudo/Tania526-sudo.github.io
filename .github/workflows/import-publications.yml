@@ -1,57 +1,57 @@
-# Hugo Blox GitHub Action to convert Bibtex publications to Markdown-based webpages
-name: Import Publications From Bibtex
+name: Import Publications from BibTeX
 
-# Require permission to create a PR
-permissions:
-  contents: write
-  pull-requests: write
-
-# Run workflow when a `.bib` file is added or updated in the `data/` folder
 on:
   push:
     branches: ['main']
     paths: ['publications.bib']
-
-  # Allows you to run this workflow manually from the Actions tab
+    
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
-  hugoblox:
-    if: github.repository_owner != 'HugoBlox'
+  import-publications:
     runs-on: ubuntu-latest
+    if: github.repository_owner == 'Tania526-sudo'
+
     steps:
-      - name: Checkout the repo
+      - name:  Checkout repository
         uses: actions/checkout@v3
-      - name: Set up Python 3.12
+
+      - name:  Setup Python 3.12
         uses: actions/setup-python@v4
         with:
           python-version: "3.12"
-      - name: Install dependencies
+
+      - name:  Install academic CLI
         run: |
           python -m pip install --upgrade pip
           pip install academic==0.10.0
-      - name: Run Academic (Bibtex To Markdown Converter)
-        # Check `.bib` file exists for case when action runs on `.bib` deletion
-        # Note GH only provides hashFiles func in `steps.if` context, not `jobs.if` context
+
+      - name:  Convert BibTeX to Markdown
         if: ${{ hashFiles('publications.bib') != '' }}
         run: academic import publications.bib content/publication/ --compact
-      - name: Create Pull Request
-        # Set ID for `Check outputs` stage
+
+      - name:  Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v5
         with:
-          commit-message: 'content: import publications from Bibtex'
-          title: Hugo Blox Builder - Import latest publications
+          commit-message: 'content: import publications from BibTeX'
+          title: Import latest publications from BibTeX
           body: |
-            Import the latest publications from `publications.bib` to `content/publication/`.
-            将最新的出版物从`publications.bib`导入到`content/publication/`。
-            [View Documentation](https://github.com/GetRD/academic-file-converter)
+            Automatically imported publications from `publications.bib` to `content/publication/`.
+
+            See: https://github.com/GetRD/academic-file-converter
           base: main
-          labels: automated-pr, content
-          branch: hugoblox-import-publications
+          labels: automated-pr, publications
+          branch: auto/import-publications
           delete-branch: true
-      - name: Check outputs
+
+      - name:  Output PR Info
         if: ${{ steps.cpr.outputs.pull-request-number }}
         run: |
-          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
-          echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
+          echo "Pull Request Number: ${{ steps.cpr.outputs.pull-request-number }}"
+          echo "Pull Request URL: ${{ steps.cpr.outputs.pull-request-url }}"
+

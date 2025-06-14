@@ -1,0 +1,72 @@
+# Hugo Configuration
+# Docs: https://docs.hugoblox.com/tutorial/
+
+# Website info
+title: Tetiana Starovoyt | AI & Water Systems Portfolio
+baseURL: 'https://tania526-sudo.github.io/'
+
+############################
+## LANGUAGE
+############################
+
+defaultContentLanguage: en
+hasCJKLanguage: false
+defaultContentLanguageInSubdir: false
+removePathAccents: true
+
+############################
+## ADVANCED
+############################
+
+build:
+  writeStats: true
+
+enableGitInfo: true
+summaryLength: 30
+
+pagination:
+  pagerSize: 10
+
+enableEmoji: true
+enableRobotsTXT: true
+footnotereturnlinkcontents: <sup>^</sup>
+
+ignoreFiles:
+  - \.ipynb$
+  - .ipynb_checkpoints$
+  - \.Rmd$
+  - \.Rmarkdown$
+  - _cache$
+
+permalinks:
+  authors: '/author/:slug/'
+
+disableAliases: true
+
+outputs:
+  home: [HTML, RSS, headers, redirects, backlinks]
+  section: [HTML, RSS]
+
+imaging:
+  resampleFilter: lanczos
+  quality: 85
+  anchor: smart
+
+timeout: 600000
+
+taxonomies:
+  author: authors
+  tag: tags
+  publication_type: publication_types
+
+markup:
+  _merge: deep
+  highlight:
+    lineNos: true
+
+security:
+  _merge: deep
+
+sitemap:
+  _merge: deep
+
