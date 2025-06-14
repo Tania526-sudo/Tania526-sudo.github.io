@@ -1,14 +1,14 @@
 main:
-  - name: Bio
-    url: /
-    weight: 10
+  - name: About
+    url: '#about'
+    weight: 1
   - name: Projects
-    url: /#projects
-    weight: 20
+    url: '#projects'
+    weight: 2
   - name: Publications
-    url: /#publications
-    weight: 30
+    url: '#publications'
+    weight: 3
   - name: Contact
-    url: /#contact
-    weight: 40
+    url: '#contact'
+    weight: 4
 

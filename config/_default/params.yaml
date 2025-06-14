@@ -53,3 +53,10 @@ features:
     enable: true  
   privacy_pack:
     enable: true  
+
+home:
+  sections:
+    - about
+    - projects
+    - publications
+    - contact
