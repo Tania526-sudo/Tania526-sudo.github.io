@@ -45,7 +45,7 @@ profiles:
   - icon: brands/github
     url: https://github.com/Tania526-sudo
   - icon: brands/linkedin
-    url: https://linkedin.com/in/tania-starovoyt
+    url: https://www.linkedin.com/in/tetiana-starovoit-61b246200/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/
   - icon: academicons/orcid
