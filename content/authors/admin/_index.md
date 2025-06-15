@@ -1,7 +1,7 @@
 ---
 name: Тетяна Старовойт
 role: AI Researcher
-avatar: "media/avatar.png"
+avatar: /media/avatar.jpg
 bio: |
   Hybrid AI researcher working with GNN, PINN, SCADA, and water infrastructure.
 superuser: true
