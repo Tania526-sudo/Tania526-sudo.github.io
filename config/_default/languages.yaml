@@ -1,20 +1,22 @@
+# Languages
+#   Create a section for each of your site's languages.
+#   Documentation: https://docs.hugoblox.com/reference/language/
+
+# Default language
 en:
   languageCode: en-us
-  contentDir: content/en
-  title: Tetiana Starovoyt | AI & Water Systems
-  params:
-    description: Personal academic portfolio of Tetiana Starovoyt, researcher in hybrid AI and water infrastructure.
-  menu:
-    main:
-      - name: Bio
-        url: '#about'
-        weight: 1
-      - name: Projects
-        url: '#projects'
-        weight: 2
-      - name: Publications
-        url: '#publications'
-        weight: 3
-      - name: Contact
-        url: '#contact'
-        weight: 4
+  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
+  #contentDir: content/en
+
+# Uncomment the lines below to configure your website in a second language.
+#zh:
+#  languageCode: zh-Hans
+#  contentDir: content/zh
+#  title: Chinese website title...
+#  params:
+#    description: Site description in Chinese...
+#  menu:
+#    main:
+#      - name: 传
+#        url: '#about'
+#        weight: 1

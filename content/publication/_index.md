@@ -2,11 +2,11 @@
 title: Publications
 cms_exclude: true
 
-# View type for the publications section.
+# View.
 view: citation
 
-# Optional banner for the page header.
+# Optional header image (relative to `static/media/` folder).
 banner:
-  caption: 'Research in Hybrid AI, SCADA-aware Models, and Sustainable Water Infrastructure'
-  image: 'media/banner/publications_water_ai.jpg'
+  caption: ''
+  image: ''
 ---

@@ -1,40 +1,25 @@
 ############################
 ## HUGO MODULES
-## Themes, Tailwind, Netlify & Custom Blocks
-## Docs: https://docs.hugoblox.com/
+## Install or uninstall themes and plugins here.
+## Docs: https://gohugo.io/hugo-modules/
 ############################
 
 imports:
-  # Netlify plugin for HugoBlox (search, sitemap, redirects)
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
-
-  # Tailwind CSS (HugoBlox default)
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
 
-  # Optional: If you have a custom theme, you can add it here
-  # - path: github.com/YOUR-USERNAME/YOUR-CUSTOM-THEME
-
+# Install any Hugo Blox within the `hugo-blox/blox/` folder
 mounts:
-  # Community widgets and partials
   - source: hugo-blox/blox/community
     target: layouts/partials/blox/community/
     includeFiles: '**.html'
-
-  # General-purpose widgets and blocks
   - source: hugo-blox/blox/all-access
     target: layouts/partials/blox/
     includeFiles: '**.html'
-
-  # Tailwind/CSS compiled blocks
   - source: hugo-blox/blox
     target: assets/dist/community/blox/
     includeFiles: '**.css'
-
-  # Local layouts (override or custom templates)
   - source: layouts
     target: layouts
-
-  # Local assets (images, CSS, fonts)
   - source: assets
     target: assets
-

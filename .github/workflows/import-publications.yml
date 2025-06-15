@@ -15,17 +15,10 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-
-
 jobs:
-
-
-  import-publications:
-    if: github.repository_owner != 'Tania526-sudo'
+  hugoblox:
+    if: github.repository_owner != 'HugoBlox'
     runs-on: ubuntu-latest
-
-
-
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v3
@@ -51,7 +44,7 @@ jobs:
           title: Hugo Blox Builder - Import latest publications
           body: |
             Import the latest publications from `publications.bib` to `content/publication/`.
-
+            将最新的出版物从`publications.bib`导入到`content/publication/`。
             [View Documentation](https://github.com/GetRD/academic-file-converter)
           base: main
           labels: automated-pr, content

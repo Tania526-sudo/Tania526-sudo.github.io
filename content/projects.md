@@ -1,25 +1,23 @@
 ---
-title: "Projects"
-date: 2025-06-14
+title: 'Projects'
+date: 2024-05-19
 type: landing
 
 design:
   # Section spacing
-  spacing: "5rem"
+  spacing: '5rem'
 
+# Page sections
 sections:
   - block: collection
     content:
-      title: Selected Research & Innovation Projects
-      text: >
-        I lead and contribute to applied research projects in the domains of hybrid AI, critical infrastructure, and spatial optimization.  
-        Below is a selection of international, academic, and industry-focused initiatives — combining Graph AI, SCADA data, GIS models, and next-generation digital twins for resilient water networks.
+      title: Selected Projects
+      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
       filters:
         folders:
           - project
     design:
       view: article-grid
       fill_image: false
-      columns: 2
+      columns: 3
 ---
-

@@ -1,22 +1,27 @@
 # SITE SETUP
-# Docs: https://docs.hugoblox.com/
+# Guide: https://docs.hugoblox.com/tutorial/
+# Documentation: https://docs.hugoblox.com/
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
 appearance:
-  mode: system         
-  color: emerald       
+  mode: system
+  color: emerald
 
-# SEO & Analytics
+# SEO
 marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: 'Tetiana Starovoyt'
-    description: "AI researcher working on hybrid neural networks, smart water infrastructure, and adaptive graph-based modeling."
-    twitter: 'tania_starovoyt'
+    org_name: ''
+    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
+    twitter: 'GetResearchDev'
   analytics:
-    google_analytics: ''         
-    plausible: ''                
+    google_analytics: ''
+    baidu_tongji: ''
+    plausible: ''
+    fathom: ''
+    pirsch: ''
   verification:
     google: ''
     baidu: ''
@@ -30,12 +35,12 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Tetiana Starovoyt"
+      text: "Your Name"
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Tetiana Starovoyt. This work is licensed under {license}'
+    notice: '© {year} Me. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
@@ -50,13 +55,6 @@ locale:
 # Site features
 features:
   math:
-    enable: true  
+    enable: false
   privacy_pack:
-    enable: true  
-
-home:
-  sections:
-    - about
-    - projects
-    - publications
-    - contact
+    enable: false

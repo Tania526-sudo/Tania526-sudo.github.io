@@ -1,18 +1,13 @@
 ---
-title: Talks & International Presentations
-cms_exclude: false
-#url: talks
+title: Recent & Upcoming Talks
+cms_exclude: true
+#url: talk
 
-# View type: card / list / compact
+# View
 view: card
 
 # Optional cover image (relative to `assets/media/` folder).
 image:
-  caption: 'Presentation at Global Water Summit 2025'
-  filename: 'summit-paris-banner.jpg'  
-
-# Section description (optional, visible if layout allows it)
-body: |
-  Keynotes and invited talks on hybrid AI, digital twins, and smart water systems presented at global conferences and Horizon Europe events.
+  caption: ''
+  filename: ''
 ---
-
