@@ -1,94 +1,66 @@
 ---
-title: ✅ Manage your projects
-summary: Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
-date: 2023-10-23
+title: Research Project Planning & AI Experiments Management
+summary: Manage your water AI research pipeline with mindmaps, Gantt charts, and scientific todo-lists.
+date: 2025-06-14
 authors:
-  - admin
+  - Tetiana
 tags:
+  - Water AI
   - Hugo Blox
-  - Markdown
+  - PINN
+  - GNN
+  - Project Management
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
+  caption: 'Image credit: [**Tetiana Starovoit**](https://github.com/Tania526-sudo)'
 ---
 
-Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
+Effectively manage your **AI-driven research projects** for smart water networks — from ideation to simulation, paper writing, and presentations.
 
-## Ideation
+## Ideation (Mind Mapping)
 
-Hugo Blox supports a Markdown extension for mindmaps.
+Use Hugo Blox's **mindmap** extension to brainstorm ideas for a new hybrid AI model or grant proposal (e.g. Horizon Europe or Global Water Summit initiative):
 
-Simply insert a Markdown code block labelled as `markmap` and optionally set the height of the mindmap as shown in the example below.
+```markmap {height="250px"}
+- AquaTwin+ Project
+  - Hybrid AI
+    - GNN
+    - PINN
+    - Fuzzy Logic
+  - SCADA Integration
+  - Pollution Modelling
+  - Leak Detection
+  - DMA Zoning
+  - Partners
+    - TUHH
+    - Hamburg Wasser
+    - КПІ
+    - Київводоканал
+    - Siemens
 
-Mindmaps can be created by simply writing the items as a Markdown list within the `markmap` code block, indenting each item to create as many sub-levels as you need:
 
-<div class="highlight">
-<pre class="chroma">
-<code>
-```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
-```
-</code>
-</pre>
-</div>
-
-renders as
-
-```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
-```
-
-## Diagrams
-
-Hugo Blox supports the _Mermaid_ Markdown extension for diagrams.
-
-An example **Gantt diagram**:
-
-    ```mermaid
-    gantt
-    section Section
-    Completed :done,    des1, 2014-01-06,2014-01-08
-    Active        :active,  des2, 2014-01-07, 3d
-    Parallel 1   :         des3, after des1, 1d
-    Parallel 2   :         des4, after des1, 1d
-    Parallel 3   :         des5, after des3, 1d
-    Parallel 4   :         des6, after des4, 1d
-    ```
-
-renders as
-
-```mermaid
 gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-```
+dateFormat  YYYY-MM-DD
+title Hybrid AI for Smart Water Networks
 
-## Todo lists
+section Setup
+Define Objectives    :done, 2025-05-01, 5d
+Prepare Data         :done, 2025-05-06, 5d
 
-You can even write your todo lists in Markdown too:
+section Development
+GNN Modeling         :active, 2025-05-11, 10d
+PINN Integration     :2025-05-21, 7d
+Pollution Scenarios  :2025-05-28, 5d
 
-```markdown
-- [x] Write math example
-  - [x] Write diagram example
-- [ ] Do something else
-```
+section Dissemination
+Prepare GitHub Repo  :2025-06-02, 2d
+Global Summit Slides :2025-06-04, 2d
 
-renders as
 
-- [x] Write math example
-  - [x] Write diagram example
-- [ ] Do something else
+- [x] Import Walkerton EPANET model
+- [x] Add base demand & chlorine decay config
+- [x] Integrate PINN for unknown pipe zones
+- [x] Train GNN on simulated leaks
+- [ ] Implement RL agent for tariff control
+- [ ] Deploy interactive dashboard (Streamlit/Leaflet)
+- [ ] Prepare Horizon Europe proposal PDF
 
-## Did you find this page helpful? Consider sharing it 🙌

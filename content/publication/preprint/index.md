@@ -1,71 +1,74 @@
 ---
-title: "An example preprint / working paper"
+title: "Preprint: Fuzzy-GNN and PINN-based Modeling of Water Infrastructure under SCADA Blackout Conditions"
+
 authors:
-- admin
-date: "2019-04-07T00:00:00Z"
+- tetiana-starovoyt
+
+date: "2025-06-10T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2025-06-14T00:00:00Z"
 
-# Publication type.
-# Accepts a single type but formatted as a YAML list (for Hugo requirements).
-# Enter a publication type from the CSL standard.
 publication_types: ["article"]
 
-# Publication name and optional abbreviated publication name.
 publication: ""
 publication_short: ""
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: >
+  This working paper introduces an integrated hybrid modeling pipeline combining fuzzy graph neural networks (F-GNN), physics-informed neural networks (PINNs), and multi-objective optimization for adaptive water network control. The model addresses uncertainties due to partial SCADA blackout and proposes mechanisms for inferring missing hydraulic data. The framework was evaluated using a modified Walkerton EPANET model and synthetic fault scenarios. The results highlight the effectiveness of integrating PINNs with fuzzy logic to maintain system observability and resilience during data loss.
 
-# Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: >
+  A preprint presenting an adaptive hybrid GNN+PINN+fuzzy model for resilient water infrastructure under SCADA data loss.
 
 tags:
-- Large Language Models
+- Fuzzy GNN
+- PINN
+- SCADA
+- Hybrid AI
+- Critical Infrastructure
+- Water Networks
+- Optimization
+- Preprint
 
 featured: true
 
 links:
-- name: Custom Link
-  url: http://example.org
-url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_dataset: '#'
-url_poster: '#'
-url_project: ''
-url_slides: ''
-url_source: '#'
-url_video: '#'
+- name: GitHub (public components)
+  url: 
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+url_pdf: ""
+url_code: ""
+url_dataset: "#"
+url_poster: ""
+url_project: "hybrid-fuzzy-gnn-water"
+url_slides: ""
+url_source: ""
+url_video: ""
+
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
-  focal_point: ""
+  caption: 'Graph-based fuzzy PINN structure for adaptive modeling of blackout zones in water distribution'
+  focal_point: "center"
   preview_only: false
 
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
 projects:
-- internal-project
+- hybrid-fuzzy-gnn-water
 
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-slides: example
+slides: ""
+
 ---
 
-This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
+This preprint builds upon the results of our previous published work on GIS-ANFIS-based accident prediction in water networks.
 
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
+{{% callout warning %}}
+Due to the critical nature of infrastructure data and the wartime conditions in Ukraine, **full access to source code and datasets is restricted**. Only general architecture and anonymized examples are shared publicly.
 {{% /callout %}}
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+The proposed model includes:
+
+- Fuzzy membership layers on top of graph node attributes
+- Integration of PINN for physical constraint modeling (e.g., Darcy–Weisbach)
+- Compensation mechanisms for missing SCADA sensor inputs
+- NSGA-II multi-objective optimization for valve control
+
+This approach is applicable in utility AI systems that must remain resilient even during cyber-physical or war-induced infrastructure disruptions.

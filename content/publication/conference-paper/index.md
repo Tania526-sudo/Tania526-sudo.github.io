@@ -1,87 +1,77 @@
 ---
-title: 'An example conference paper'
+title: 'Hybrid AI Models for Adaptive Water Infrastructure: GNN and PINN Integration with SCADA Signals'
 
-# Authors
-# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
-# and it will be replaced with their full name and linked to their profile.
 authors:
-  - admin
-  - Robert Ford
+  - tetiana-starovoyt
+  - serhii-klimov
 
-# Author notes (optional)
 author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
+  - 'Corresponding author'
+  - 'Co-author and model integrator'
 
-date: '2013-07-01T00:00:00Z'
-doi: ''
+date: '2024-12-10T00:00:00Z'
+doi: '10.31713/mcit.2024.046'
 
-# Schedule page publish date (NOT publication's date).
-publishDate: '2017-01-01T00:00:00Z'
+publishDate: '2025-06-14T00:00:00Z'
 
-# Publication type.
-# Accepts a single type but formatted as a YAML list (for Hugo requirements).
-# Enter a publication type from the CSL standard.
 publication_types: ['paper-conference']
 
-# Publication name and optional abbreviated publication name.
-publication: In *Hugo Blox Builder Conference*
-publication_short: In *ICW*
+publication: In *International Conference on AI for Infrastructure Resilience (ICAIRI 2025)*
+publication_short: In *ICAIRI*
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: >
+  This paper introduces a novel hybrid AI framework combining Graph Neural Networks (GNN) and Physics-Informed Neural Networks (PINNs) to enhance monitoring and control in urban water supply systems. By integrating real-time SCADA signals and topological features of EPANET-modeled networks, the method achieves efficient leak detection, pressure anomaly forecasting, and explainability. A case study on the Walkerton water network demonstrates improvements in prediction accuracy and optimization of valve placement strategies using evolutionary search (NSGA-II).
 
-# Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: >
+  Hybrid GNN-PINN models integrated with SCADA data improve real-time diagnostics and adaptive management of water supply networks.
 
 tags:
-  - Large Language Models
+  - Hybrid AI
+  - Graph Neural Networks
+  - PINN
+  - SCADA
+  - Water Infrastructure
+  - EPANET
+  - Horizon Europe
 
-# Display this page in the Featured widget?
 featured: true
 
-# Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
-
 url_pdf: ''
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_code: ''
+url_dataset: ''
 url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_video: 'https://youtube.com'
+url_project: 'hybrid-ai-water-infrastructure'
+url_slides: 'gnn-pinn-water-slides'
+url_source: ''
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
+
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
-  focal_point: ''
+  caption: 'Image credit: Walkerton Network Simulation – Adaptive Optimization Scenario'
+  focal_point: 'center'
   preview_only: false
 
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
 projects:
-  - example
+  - hybrid-ai-water-infrastructure
 
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-slides: example
+slides: gnn-pinn-water-slides
 ---
 
 {{% callout note %}}
-Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+Click the _Cite_ button above to export the BibTeX and add this to your reference manager or Zotero.
 {{% /callout %}}
 
 {{% callout note %}}
-Create your slides in Markdown - click the _Slides_ button to check out the example.
+These slides provide an overview of the SCADA-integrated PINN-GNN architecture for water supply optimization.
 {{% /callout %}}
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+The proposed approach demonstrates how hybrid neural architectures can be applied to real-world water infrastructure challenges. By combining graph topologies with physical modeling constraints and real-time sensor feedback, the framework bridges data-driven and physics-based modeling.
+
+It supports operational decisions such as:
+
+- Dynamic leak localization
+- Adaptive pressure control
+- Placement of smart valves and sensors
+- Predictive failure analysis
+
+Future work includes deployment of the system in collaboration with water utilities across Europe within the Horizon Europe framework.
+

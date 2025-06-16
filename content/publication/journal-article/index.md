@@ -1,75 +1,76 @@
 ---
-title: "An example journal article"
+title: "A Hybrid Model of Artificial Intelligence Integrated into GIS for Predicting Accidents in Water Supply Networks"
+
 authors:
-- admin
-- Robert Ford
+- tetiana-starovoyt
+- yuriy-zaychenko
+
 author_notes:
-- "Equal contribution"
-- "Equal contribution"
-date: "2015-09-01T00:00:00Z"
-doi: ""
+- "Co-author: AI-GIS integration and validation"
+- "Lead author: development of ANFIS-GA-ACO methodology"
 
-# Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+date: "2024-06-01T00:00:00Z"
+doi: "10.20535/SRIT.2308-8893.2024.2.04"
 
-# Publication type.
-# Accepts a single type but formatted as a YAML list (for Hugo requirements).
-# Enter a publication type from the CSL standard.
+publishDate: "2024-06-14T00:00:00Z"
+
 publication_types: ["article-journal"]
 
-# Publication name and optional abbreviated publication name.
-publication: "*Journal of Source Themes, 1*(1)"
-publication_short: ""
+publication: "*System Research and Information Technologies, 2*(2024)"
+publication_short: "*SRIT*"
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: >
+  This article proposes a hybrid neuro-fuzzy model integrated into a geographic information system (GIS) to forecast accident locations in urban water supply networks. Combining ANFIS with genetic algorithms and ant colony optimization (ACO), the system allows spatiotemporal prediction with improved accuracy. The study was conducted using real data from Kyiv’s water infrastructure. Model performance was evaluated using MAE, RMSE, and R², achieving a forecast improvement of up to 11%. The hybrid approach demonstrates the potential for practical deployment in critical infrastructure monitoring.
 
-# Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: >
+  A GIS-integrated hybrid AI model (ANFIS + GA + ACO) for spatial prediction of accidents in water supply networks.
 
 tags:
-- Source Themes
-featured: false
+- ANFIS
+- Ant Colony Optimization
+- Genetic Algorithm
+- GIS
+- Spatiotemporal Modeling
+- Water Supply
+- Critical Infrastructure
+- Metaheuristics
 
-# links:
-# - name: ""
-#   url: ""
-url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
+featured: true
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+url_pdf: "https://doi.org/10.20535/SRIT.2308-8893.2024.2.04"
+url_code: ""
+url_dataset: ""
+url_poster: ""
+url_project: "hybrid-ai-gis-accident-prediction"
+url_slides: ""
+url_source: ""
+url_video: ""
+
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
-  focal_point: ""
+  caption: 'Image: Accident prediction map generated using ANFIS-GIS hybrid model (Kyiv)'
+  focal_point: "center"
   preview_only: false
 
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
-projects: []
+projects:
+- hybrid-ai-gis-accident-prediction
 
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-slides: example
+slides: ""
+
 ---
 
 {{% callout note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+Due to the sensitive nature of the infrastructure involved, **part of the source code and the dataset used in this study are not publicly available**. These materials are classified under wartime restrictions and relate to critical infrastructure, thus cannot be shared or distributed.
 {{% /callout %}}
 
 {{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
+This publication is based on research conducted at the Educational and Research Institute for Applied System Analysis (ERIAS) of Igor Sikorsky Kyiv Polytechnic Institute.
 {{% /callout %}}
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+The proposed hybrid system combines:
+
+- **ANFIS**: for fuzzy logic and learning from data;
+- **GA + ACO**: to optimize fuzzy rule sets and clustering;
+- **GIS**: for spatial context, visualization, and decision support.
+
+The integration supports water utilities in making informed, predictive decisions regarding accident response and preventive maintenance. Use of metaheuristics improved predictive power while retaining interpretability.
+

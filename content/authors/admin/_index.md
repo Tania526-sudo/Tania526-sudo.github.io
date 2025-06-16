@@ -1,186 +1,138 @@
 ---
-# Display name
-title: 吳健雄
-
-# Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
-
-# Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
-
-# Status emoji
-status:
-  icon: ☕️
-
-# Is this the primary user of the site?
+name: Тетяна Старовойт
+role: AI Researcher
+avatar: /media/avatar.jpg
+bio: |
+  Hybrid AI researcher working with GNN, PINN, SCADA, and water infrastructure.
 superuser: true
 
-# Highlight the author in author lists? (true/false)
-highlight_name: true
+social:
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/tetiana-starovoit-61b246200/
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/Tania526-sudo
 
 # Role/position/tagline
-role: Chief Scientist
+role: AI & Water Systems Researcher
 
-# Organizations/Affiliations to display in Biography blox
+# Organizations
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: Kyiv Polytechnic Institute
+    url: https://kpi.ua
+  - name: National University of Water and Environmental Engineering
+    url: https://nuwm.edu.ua
+  - name: Horizon Europe Researcher
+    url: https://research-and-innovation.ec.europa.eu
 
-# Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
+# Contact and social links
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
-    label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: 'mailto:tania.starovoyt@gmail.com'
+    label: Email Me
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/Tania526-sudo
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/tetiana-starovoit-61b246200/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/
   - icon: academicons/orcid
     url: https://orcid.org/
 
+# Research Interests
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Hybrid AI & Graph Neural Networks
+  - Smart Water Systems & EPANET Modeling
+  - Physics-Informed Neural Networks (PINN)
+  - Critical Infrastructure Resilience
 
+# Education
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
+  - area: PhD Artificial Intelligence for Water Infrastructure
+    institution: National Technical University of Ukraine "KPI"
+    date_start: 2023-10-01
     date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    summary: >
+      PhD research on hybrid GNN+PINN architectures for adaptive water distribution, leak detection, and SCADA integration in smart cities.
+  - area: MSc Water Engineering & Data Science
+    institution: NUWEE
+    date_start: 2023-09-01
+    date_end: 2025-01-01
+  - area: BSc Systems Analysis
+    institution: KPI
+    date_start: 2020-09-01
+    date_end: '2024-09-01'
+
+# Work
+work:
+  - position: Research Engineer (AI & Urban Infrastructure)
+    company_name: Kyivvodokanal (Innovation Division)
+    date_start: 2019-01-01
+    date_end: ''
+
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Developed GNN-based leak detection pipeline integrated with GIS.
+      - Coordinated cross-institutional research proposals.
+      - Built predictive optimization models using EPANET + CMA-ES.
 
 # Skills
-# Add your own SVG icons to `assets/media/icons/`
+
 skills:
-  - name: Technical Skills
+  - name: AI & Data Science
     items:
       - name: Python
-        description: ''
-        percent: 80
+        percent: 95
         icon: code-bracket
-      - name: Data Science
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: SQL
-        description: ''
-        percent: 40
-        icon: circle-stack
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
+      - name: Graph Neural Networks
+        percent: 90
+        icon: diagram-project
+      - name: EPANET / SCADA / WNTR
+        percent: 95
+        icon: droplet
+  - name: Communication & Soft Skills
+    color: '#f6a11b'
     items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
+      - name: Scientific Writing
+        percent: 95
+        icon: file-lines
+      - name: Proposal Writing 
         percent: 100
-        icon: cat
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera
+        icon: pen-nib
+      - name: Public Presentations
+        percent: 75
+        icon: person-chalkboard
 
+# Languages
 languages:
-  - name: English
+  - name: Ukrainian
     percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
+  - name: English
+    percent: 85
+  
 
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
+# Awards / Certifications
 awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
-    icon: coursera
-    summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
-    summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+  - title: Best Paper Award – AI for Water Conference
+    awarder: Water Association
+    date: '2024-05-18'
+    icon: trophy
+    summary: >
+      Recognized for presenting a hybrid GNN-PINN model for real-time water network optimization.
+
+  - title: Research Mobility Grant 
+    awarder: DAAD / EU
+    date: '2023-11-01'
+    icon: award
+    summary: >
+      Awarded for joint research with Hamburg Wasser and TUHH on digital twin applications for urban water infrastructure.
+
 ---
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Tetiana Starovoyt is a researcher and PhD candidate focused on developing hybrid neural network architectures for smart water infrastructure. Her work combines graph-based AI (GNN), physics-informed learning (PINN), and optimization tools such as EPANET, SCADA, and GIS to support critical infrastructure resilience.
+
+She collaborates with institutions such as Kyiv Polytechnic Institute, NUWEE, Hamburg Wasser, and Siemens on Horizon Europe projects. Her mission is to create adaptive digital twins for sustainable and data-driven water management.
+
+---
