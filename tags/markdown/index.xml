@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Markdown | Hugo Academic CV Theme</title><link>https://example.com/tags/markdown/</link><atom:link href="https://example.com/tags/markdown/index.xml" rel="self" type="application/rss+xml"/><description>Markdown</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><image><url>https://example.com/media/icon_hu7729264130191091259.png</url><title>Markdown</title><link>https://example.com/tags/markdown/</link></image><item><title>Pandas</title><link>https://example.com/project/pandas/</link><pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate><guid>https://example.com/project/pandas/</guid><description>&lt;p>Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.&lt;/p></description></item><item><title>PyTorch</title><link>https://example.com/project/pytorch/</link><pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate><guid>https://example.com/project/pytorch/</guid><description>&lt;p>PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.&lt;/p></description></item><item><title>scikit-learn</title><link>https://example.com/project/scikit/</link><pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate><guid>https://example.com/project/scikit/</guid><description>&lt;p>scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p></description></item><item><title>Structure your research with a second brain</title><link>https://example.com/post/second-brain/</link><pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate><guid>https://example.com/post/second-brain/</guid><description>&lt;p>Create a flexible, well-organized research environment tailored to your scientific workflows.&lt;/p>
+&lt;p>As a researcher working on hybrid AI models for critical water infrastructure, managing fragmented knowledge is essential. Hugo Blox gives you the freedom to build a &lt;strong>second brain&lt;/strong>: your personal knowledge base — either private or public — powered by clean Markdown and GitHub versioning.&lt;/p>
+&lt;p>Use it to store ideas, document pipelines, track experiments, and share results. Whether you’re preparing a Horizon Europe proposal, modeling with PINNs and GNNs, or just noting insights during fieldwork, everything stays structured and accessible.&lt;/p>
+&lt;h2 id="mindmaps">Mindmaps&lt;/h2>
+&lt;p>To structure your thinking, Hugo Blox supports &lt;strong>interactive mindmaps&lt;/strong> via the &lt;code>markmap&lt;/code> Markdown extension.&lt;/p>
+&lt;p>You can write maps as simple lists, embed equations, link to code repositories, or even reference SCADA patterns or EPANET node logic — all in one visual hierarchy.&lt;/p>
+&lt;p>Example:&lt;/p>
+&lt;div class="markmap" style="height: 200px;">
+&lt;pre>- Research Pipeline
+- Data Sources
+- SCADA
+- EPANET (.inp)
+- GeoJSON
+- AI Models
+- GNN
+- PINN
+- Fuzzy Logic
+- Optimization
+- NSGA-II
+- CMA-ES
+- RL Agents
+- Dissemination
+- GitHub
+- HugoBlox Website
+- Horizon Proposal&lt;/pre>
+&lt;/div></description></item></channel></rss>
