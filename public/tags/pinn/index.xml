@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PINN | Hugo Academic CV Theme</title><link>https://example.com/tags/pinn/</link><atom:link href="https://example.com/tags/pinn/index.xml" rel="self" type="application/rss+xml"/><description>PINN</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://example.com/media/icon_hu7729264130191091259.png</url><title>PINN</title><link>https://example.com/tags/pinn/</link></image><item><title>Research Project Planning &amp; AI Experiments Management</title><link>https://example.com/post/project-management/</link><pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate><guid>https://example.com/post/project-management/</guid><description>&lt;p>Effectively manage your &lt;strong>AI-driven research projects&lt;/strong> for smart water networks — from ideation to simulation, paper writing, and presentations.&lt;/p>
+&lt;h2 id="ideation-mind-mapping">Ideation (Mind Mapping)&lt;/h2>
+&lt;p>Use Hugo Blox&amp;rsquo;s &lt;strong>mindmap&lt;/strong> extension to brainstorm ideas for a new hybrid AI model or grant proposal (e.g. Horizon Europe or Global Water Summit initiative):&lt;/p>
+&lt;div class="markmap" style="height: 250px;">
+&lt;pre>- AquaTwin+ Project
+- Hybrid AI
+- GNN
+- PINN
+- Fuzzy Logic
+- SCADA Integration
+- Pollution Modelling
+- Leak Detection
+- DMA Zoning
+- Partners
+- TUHH
+- Hamburg Wasser
+- КПІ
+- Київводоканал
+- Siemens
+gantt
+dateFormat YYYY-MM-DD
+title Hybrid AI for Smart Water Networks
+section Setup
+Define Objectives :done, 2025-05-01, 5d
+Prepare Data :done, 2025-05-06, 5d
+section Development
+GNN Modeling :active, 2025-05-11, 10d
+PINN Integration :2025-05-21, 7d
+Pollution Scenarios :2025-05-28, 5d
+section Dissemination
+Prepare GitHub Repo :2025-06-02, 2d
+Global Summit Slides :2025-06-04, 2d
+- [x] Import Walkerton EPANET model
+- [x] Add base demand &amp; chlorine decay config
+- [x] Integrate PINN for unknown pipe zones
+- [x] Train GNN on simulated leaks
+- [ ] Implement RL agent for tariff control
+- [ ] Deploy interactive dashboard (Streamlit/Leaflet)
+- [ ] Prepare Horizon Europe proposal PDF&lt;/pre>
+&lt;/div></description></item><item><title>Preprint: Fuzzy-GNN and PINN-based Modeling of Water Infrastructure under SCADA Blackout Conditions</title><link>https://example.com/publication/preprint/</link><pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate><guid>https://example.com/publication/preprint/</guid><description>&lt;p>This preprint builds upon the results of our previous published work on GIS-ANFIS-based accident prediction in water networks.&lt;/p>
+&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-yellow-100 dark:bg-yellow-900">
+&lt;span class="pr-3 pt-1 text-red-400">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0zM12 15.75h.007v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">Due to the critical nature of infrastructure data and the wartime conditions in Ukraine, &lt;strong>full access to source code and datasets is restricted&lt;/strong>. Only general architecture and anonymized examples are shared publicly.&lt;/span>
+&lt;/div>
+&lt;p>The proposed model includes:&lt;/p>
+&lt;ul>
+&lt;li>Fuzzy membership layers on top of graph node attributes&lt;/li>
+&lt;li>Integration of PINN for physical constraint modeling (e.g., Darcy–Weisbach)&lt;/li>
+&lt;li>Compensation mechanisms for missing SCADA sensor inputs&lt;/li>
+&lt;li>NSGA-II multi-objective optimization for valve control&lt;/li>
+&lt;/ul>
+&lt;p>This approach is applicable in utility AI systems that must remain resilient even during cyber-physical or war-induced infrastructure disruptions.&lt;/p></description></item><item><title>Adaptive AI for Smart Water Networks</title><link>https://example.com/post/get-started/</link><pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate><guid>https://example.com/post/get-started/</guid><description>&lt;p>Welcome to my research blog&lt;/p>
+&lt;details class="print:hidden xl:hidden" open>
+&lt;summary>Table of Contents&lt;/summary>
+&lt;div class="text-sm">
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#vision">Vision&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#research-topics">Research Topics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#get-involved">Get Involved&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#tools--methods">Tools &amp;amp; Methods&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#themes--publishing">Themes &amp;amp; Publishing&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#credits">Credits&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;/div>
+&lt;/details>
+&lt;h2 id="vision">Vision&lt;/h2>
+&lt;p>Water is life. Yet in many regions, aging infrastructure, climate change, and unpredictable consumer behavior challenge our ability to deliver it sustainably.&lt;/p>
+&lt;p>My mission is to develop &lt;strong>adaptive AI systems&lt;/strong> that empower utilities, researchers, and communities to:&lt;/p>
+&lt;ul>
+&lt;li>detect leaks early,&lt;/li>
+&lt;li>optimize hydraulic networks,&lt;/li>
+&lt;li>model pollution and chlorination dynamics,&lt;/li>
+&lt;li>and adapt in real time to behavioral disturbances.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="research-topics">Research Topics&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Hybrid Graph Neural Networks (GNN) + Physics-Informed Neural Networks (PINN)&lt;/strong> for real-time simulation and anomaly detection in water grids&lt;/li>
+&lt;li>&lt;strong>Fractal geometry &amp;amp; metaheuristics&lt;/strong> to optimize valve placement and zoning (DMA)&lt;/li>
+&lt;li>&lt;strong>SCADA blackout simulation&lt;/strong> using I-PINN + synthetic data&lt;/li>
+&lt;li>&lt;strong>Water quality modeling&lt;/strong> including disinfectant decay and pollutant tracking&lt;/li>
+&lt;li>&lt;strong>Multi-agent systems with RL&lt;/strong> for tariff-policy simulation and response&lt;/li>
+&lt;li>&lt;strong>GeoAI and vector databases&lt;/strong> for smart urban water analytics (Neo4j + PostGIS + SCADA + LangChain)&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="get-involved">Get Involved&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Tania526-sudo" target="_blank" rel="noopener">Explore my GitHub projects&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Tania526-sudo/Hybrid-intelligent-systems-integrated-into-GIS" target="_blank" rel="noopener">Read my latest publications&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Tania526-sudo/Water-Summit-Paris/blob/main/Sammit_Paris1.pdf" target="_blank" rel="noopener">Watch my presentation at Global Water Summit 2025&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.linkedin.com/in/tetiana-starovoit-61b246200/" target="_blank" rel="noopener">Follow me on LinkedIn&lt;/a>&lt;/li>
+&lt;li>&lt;a href="mailto:starovoyt.tania@lll.kpi.ua">Request a feature or collaboration&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="tools--methods">Tools &amp;amp; Methods&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Python stack&lt;/strong>: PyTorch Geometric, DeepXDE, pymoo, Streamlit, WNTR, epanet-python&lt;/li>
+&lt;li>&lt;strong>Databases&lt;/strong>: Neo4j, PostGIS, TimescaleDB, Vector DBs for AI&lt;/li>
+&lt;li>&lt;strong>Frameworks&lt;/strong>: Hugo Blox + GitHub Pages&lt;/li>
+&lt;li>&lt;strong>Deployment&lt;/strong>: Docker, API-driven services for interactive dashboards&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="themes--publishing">Themes &amp;amp; Publishing&lt;/h2>
+&lt;p>This site is powered by &lt;strong>Hugo Blox&lt;/strong>, with fully customizable design and automated publishing. All content is written in &lt;strong>Markdown + YAML&lt;/strong> for transparency and simplicity.&lt;/p>
+&lt;hr>
+&lt;h2 id="credits">Credits&lt;/h2>
+&lt;ul>
+&lt;li>This site template is based on &lt;a href="https://hugoblox.com" target="_blank" rel="noopener">Hugo Blox&lt;/a>&lt;/li>
+&lt;li>© 2025 Tetiana Starovoit. All rights reserved.&lt;/li>
+&lt;li>Released under the MIT License.&lt;/li>
+&lt;/ul></description></item><item><title>Hybrid AI Models for Adaptive Water Infrastructure: GNN and PINN Integration with SCADA Signals</title><link>https://example.com/publication/conference-paper/</link><pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate><guid>https://example.com/publication/conference-paper/</guid><description>&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">Click the &lt;em>Cite&lt;/em> button above to export the BibTeX and add this to your reference manager or Zotero.&lt;/span>
+&lt;/div>
+&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">These slides provide an overview of the SCADA-integrated PINN-GNN architecture for water supply optimization.&lt;/span>
+&lt;/div>
+&lt;p>The proposed approach demonstrates how hybrid neural architectures can be applied to real-world water infrastructure challenges. By combining graph topologies with physical modeling constraints and real-time sensor feedback, the framework bridges data-driven and physics-based modeling.&lt;/p>
+&lt;p>It supports operational decisions such as:&lt;/p>
+&lt;ul>
+&lt;li>Dynamic leak localization&lt;/li>
+&lt;li>Adaptive pressure control&lt;/li>
+&lt;li>Placement of smart valves and sensors&lt;/li>
+&lt;li>Predictive failure analysis&lt;/li>
+&lt;/ul>
+&lt;p>Future work includes deployment of the system in collaboration with water utilities across Europe within the Horizon Europe framework.&lt;/p></description></item></channel></rss>

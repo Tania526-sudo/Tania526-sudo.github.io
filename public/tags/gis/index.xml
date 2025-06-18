@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GIS | Hugo Academic CV Theme</title><link>https://example.com/tags/gis/</link><atom:link href="https://example.com/tags/gis/index.xml" rel="self" type="application/rss+xml"/><description>GIS</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 30 Apr 2025 00:00:00 +0000</lastBuildDate><image><url>https://example.com/media/icon_hu7729264130191091259.png</url><title>GIS</title><link>https://example.com/tags/gis/</link></image><item><title>Visualizing Smart Water Systems with AI &amp; GIS</title><link>https://example.com/post/data-visualization/</link><pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate><guid>https://example.com/post/data-visualization/</guid><description>&lt;p>In my recent work on &lt;strong>hybrid AI models for water infrastructure&lt;/strong>, I needed ways to effectively explain system behavior, learning outcomes, and detected anomalies. Here are tools I used with &lt;strong>HugoBlox&lt;/strong> to communicate those insights interactively and clearly.&lt;/p>
+&lt;h2 id="interactive-charts-with-plotly">Interactive Charts with Plotly&lt;/h2>
+&lt;p>I used &lt;a href="https://plot.ly/" target="_blank" rel="noopener">Plotly&lt;/a> for dynamic visualizations of:&lt;/p>
+&lt;ul>
+&lt;li>Predicted vs actual pressure across nodes&lt;/li>
+&lt;li>Leak probability heatmaps over time&lt;/li>
+&lt;li>Consumption anomalies from SCADA time series&lt;/li>
+&lt;/ul>
+&lt;p>Save a Plotly &lt;code>.json&lt;/code> file (e.g., &lt;code>leak-probability.json&lt;/code>) in your page folder and display it like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">
+&lt;div id="chart-724981563" class="chart">&lt;/div>
+&lt;script>
+async function fetchChartJSON() {
+console.debug('Hugo Blox fetching chart JSON...')
+const response = await fetch('.\/leak-probability.json');
+return await response.json();
+}
+(function() {
+let a = setInterval( function() {
+if ( typeof window.Plotly === 'undefined' ) {
+console.debug('Plotly not loaded yet...')
+return;
+}
+clearInterval( a );
+fetchChartJSON().then(chart => {
+console.debug('Plotting chart...')
+window.Plotly.newPlot('chart-724981563', chart.data, chart.layout, {responsive: true});
+});
+}, 500 );
+})();
+&lt;/script>
+&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">graph&lt;/span> &lt;span class="nx">TD&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">A&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">SCADA&lt;/span> &lt;span class="nx">Data&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="nf">B&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">GNN&lt;/span> &lt;span class="nx">Inference&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">B&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="nx">C&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="nx">Leak&lt;/span> &lt;span class="nx">Detected&lt;/span>&lt;span class="err">?&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">C&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="p">&amp;gt;|&lt;/span>&lt;span class="nx">Yes&lt;/span>&lt;span class="p">|&lt;/span> &lt;span class="nx">D&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">Trigger&lt;/span> &lt;span class="nx">Alert&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">C&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="p">&amp;gt;|&lt;/span>&lt;span class="nx">No&lt;/span>&lt;span class="p">|&lt;/span> &lt;span class="nx">E&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">Continue&lt;/span> &lt;span class="nx">Monitoring&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">sequenceDiagram&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">SCADA&lt;/span>&lt;span class="o">-&amp;gt;&amp;gt;&lt;/span>&lt;span class="nx">GNN&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nx">Feed&lt;/span> &lt;span class="nx">pressure&lt;/span> &lt;span class="nx">data&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">GNN&lt;/span>&lt;span class="o">-&amp;gt;&amp;gt;&lt;/span>&lt;span class="nx">PINN&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nx">Pass&lt;/span> &lt;span class="nx">edge&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">node&lt;/span> &lt;span class="nx">outputs&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">PINN&lt;/span>&lt;span class="o">--&amp;gt;&amp;gt;&lt;/span>&lt;span class="nx">SCADA&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nx">Simulated&lt;/span> &lt;span class="nx">parameters&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">Note&lt;/span> &lt;span class="nx">right&lt;/span> &lt;span class="nx">of&lt;/span> &lt;span class="nx">PINN&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nx">Feedback&lt;/span> &lt;span class="nx">to&lt;/span> &lt;span class="nx">SCADA&lt;/span> &lt;span class="nx">control&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>A Hybrid Model of Artificial Intelligence Integrated into GIS for Predicting Accidents in Water Supply Networks</title><link>https://example.com/publication/journal-article/</link><pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate><guid>https://example.com/publication/journal-article/</guid><description>&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">Due to the sensitive nature of the infrastructure involved, &lt;strong>part of the source code and the dataset used in this study are not publicly available&lt;/strong>. These materials are classified under wartime restrictions and relate to critical infrastructure, thus cannot be shared or distributed.&lt;/span>
+&lt;/div>
+&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">This publication is based on research conducted at the Educational and Research Institute for Applied System Analysis (ERIAS) of Igor Sikorsky Kyiv Polytechnic Institute.&lt;/span>
+&lt;/div>
+&lt;p>The proposed hybrid system combines:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>ANFIS&lt;/strong>: for fuzzy logic and learning from data;&lt;/li>
+&lt;li>&lt;strong>GA + ACO&lt;/strong>: to optimize fuzzy rule sets and clustering;&lt;/li>
+&lt;li>&lt;strong>GIS&lt;/strong>: for spatial context, visualization, and decision support.&lt;/li>
+&lt;/ul>
+&lt;p>The integration supports water utilities in making informed, predictive decisions regarding accident response and preventive maintenance. Use of metaheuristics improved predictive power while retaining interpretability.&lt;/p></description></item></channel></rss>

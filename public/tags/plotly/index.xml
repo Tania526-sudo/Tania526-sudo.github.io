@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Plotly | Hugo Academic CV Theme</title><link>https://example.com/tags/plotly/</link><atom:link href="https://example.com/tags/plotly/index.xml" rel="self" type="application/rss+xml"/><description>Plotly</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 30 Apr 2025 00:00:00 +0000</lastBuildDate><image><url>https://example.com/media/icon_hu7729264130191091259.png</url><title>Plotly</title><link>https://example.com/tags/plotly/</link></image><item><title>Visualizing Smart Water Systems with AI &amp; GIS</title><link>https://example.com/post/data-visualization/</link><pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate><guid>https://example.com/post/data-visualization/</guid><description>&lt;p>In my recent work on &lt;strong>hybrid AI models for water infrastructure&lt;/strong>, I needed ways to effectively explain system behavior, learning outcomes, and detected anomalies. Here are tools I used with &lt;strong>HugoBlox&lt;/strong> to communicate those insights interactively and clearly.&lt;/p>
+&lt;h2 id="interactive-charts-with-plotly">Interactive Charts with Plotly&lt;/h2>
+&lt;p>I used &lt;a href="https://plot.ly/" target="_blank" rel="noopener">Plotly&lt;/a> for dynamic visualizations of:&lt;/p>
+&lt;ul>
+&lt;li>Predicted vs actual pressure across nodes&lt;/li>
+&lt;li>Leak probability heatmaps over time&lt;/li>
+&lt;li>Consumption anomalies from SCADA time series&lt;/li>
+&lt;/ul>
+&lt;p>Save a Plotly &lt;code>.json&lt;/code> file (e.g., &lt;code>leak-probability.json&lt;/code>) in your page folder and display it like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">
+&lt;div id="chart-724981563" class="chart">&lt;/div>
+&lt;script>
+async function fetchChartJSON() {
+console.debug('Hugo Blox fetching chart JSON...')
+const response = await fetch('.\/leak-probability.json');
+return await response.json();
+}
+(function() {
+let a = setInterval( function() {
+if ( typeof window.Plotly === 'undefined' ) {
+console.debug('Plotly not loaded yet...')
+return;
+}
+clearInterval( a );
+fetchChartJSON().then(chart => {
+console.debug('Plotting chart...')
+window.Plotly.newPlot('chart-724981563', chart.data, chart.layout, {responsive: true});
+});
+}, 500 );
+})();
+&lt;/script>
+&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">graph&lt;/span> &lt;span class="nx">TD&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">A&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">SCADA&lt;/span> &lt;span class="nx">Data&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="nf">B&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">GNN&lt;/span> &lt;span class="nx">Inference&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">B&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="nx">C&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="nx">Leak&lt;/span> &lt;span class="nx">Detected&lt;/span>&lt;span class="err">?&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">C&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="p">&amp;gt;|&lt;/span>&lt;span class="nx">Yes&lt;/span>&lt;span class="p">|&lt;/span> &lt;span class="nx">D&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">Trigger&lt;/span> &lt;span class="nx">Alert&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">C&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="p">&amp;gt;|&lt;/span>&lt;span class="nx">No&lt;/span>&lt;span class="p">|&lt;/span> &lt;span class="nx">E&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">Continue&lt;/span> &lt;span class="nx">Monitoring&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">sequenceDiagram&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">SCADA&lt;/span>&lt;span class="o">-&amp;gt;&amp;gt;&lt;/span>&lt;span class="nx">GNN&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nx">Feed&lt;/span> &lt;span class="nx">pressure&lt;/span> &lt;span class="nx">data&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">GNN&lt;/span>&lt;span class="o">-&amp;gt;&amp;gt;&lt;/span>&lt;span class="nx">PINN&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nx">Pass&lt;/span> &lt;span class="nx">edge&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">node&lt;/span> &lt;span class="nx">outputs&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">PINN&lt;/span>&lt;span class="o">--&amp;gt;&amp;gt;&lt;/span>&lt;span class="nx">SCADA&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nx">Simulated&lt;/span> &lt;span class="nx">parameters&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">Note&lt;/span> &lt;span class="nx">right&lt;/span> &lt;span class="nx">of&lt;/span> &lt;span class="nx">PINN&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nx">Feedback&lt;/span> &lt;span class="nx">to&lt;/span> &lt;span class="nx">SCADA&lt;/span> &lt;span class="nx">control&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
