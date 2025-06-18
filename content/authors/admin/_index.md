@@ -4,6 +4,11 @@ role: AI Researcher
 avatar: /media/avatar.jpg
 bio: |
   Hybrid AI researcher working with GNN, PINN, SCADA, and water infrastructure.
+
+button:
+  text: Download CV
+  url: uploads/tetiana-starovoyt-cv.pdf
+
 superuser: true
 
 social:
@@ -13,9 +18,18 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/Tania526-sudo
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?user=moT4uP0AAAAJ&hl=uk
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0009-0008-6335-7679
+  - icon: envelope
+    icon_pack: fas
+    link: mailto:starovoyt.tania@gmail.com
 
 # Role/position/tagline
-role: AI & Water Systems Researcher
+role: GeoAI & Machine Learning Engineer
 
 # Organizations
 organizations:
@@ -28,16 +42,16 @@ organizations:
 # Contact and social links
 profiles:
   - icon: at-symbol
-    url: 'mailto:tania.starovoyt@gmail.com'
+    url: 'mailto:starovoyt.tania@gmail.com'
     label: Email Me
   - icon: brands/github
     url: https://github.com/Tania526-sudo
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/tetiana-starovoit-61b246200/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.com/citations?user=moT4uP0AAAAJ&hl=uk
   - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://orcid.org/0009-0008-6335-7679
 
 # Research Interests
 interests:
@@ -132,6 +146,6 @@ awards:
 
 Tetiana Starovoyt is a researcher and PhD candidate focused on developing hybrid neural network architectures for smart water infrastructure. Her work combines graph-based AI (GNN), physics-informed learning (PINN), and optimization tools such as EPANET, SCADA, and GIS to support critical infrastructure resilience.
 
-She collaborates with institutions such as Kyiv Polytechnic Institute, NUWEE, Hamburg Wasser, and Siemens on Horizon Europe projects. Her mission is to create adaptive digital twins for sustainable and data-driven water management.
+
 
 ---
