@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Water AI | Hugo Academic CV Theme</title>
+    <link>http://localhost:1313/tags/water-ai/</link>
+      <atom:link href="http://localhost:1313/tags/water-ai/index.xml" rel="self" type="application/rss+xml" />
+    <description>Water AI</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>Water AI</title>
+      <link>http://localhost:1313/tags/water-ai/</link>
+    </image>
+    
+    <item>
+      <title>Research Project Planning &amp; AI Experiments Management</title>
+      <link>http://localhost:1313/post/project-management/</link>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/project-management/</guid>
+      <description>&lt;p&gt;Effectively manage your &lt;strong&gt;AI-driven research projects&lt;/strong&gt; for smart water networks — from ideation to simulation, paper writing, and presentations.&lt;/p&gt;
+&lt;h2 id=&#34;ideation-mind-mapping&#34;&gt;Ideation (Mind Mapping)&lt;/h2&gt;
+&lt;p&gt;Use Hugo Blox&amp;rsquo;s &lt;strong&gt;mindmap&lt;/strong&gt; extension to brainstorm ideas for a new hybrid AI model or grant proposal (e.g. Horizon Europe or Global Water Summit initiative):&lt;/p&gt;
+&lt;div class=&#34;markmap&#34; style=&#34;height: 250px;&#34;&gt;
+
+&lt;pre&gt;- AquaTwin+ Project
+  - Hybrid AI
+    - GNN
+    - PINN
+    - Fuzzy Logic
+  - SCADA Integration
+  - Pollution Modelling
+  - Leak Detection
+  - DMA Zoning
+  - Partners
+    - TUHH
+    - Hamburg Wasser
+    - КПІ
+    - Київводоканал
+    - Siemens
+
+
+gantt
+dateFormat  YYYY-MM-DD
+title Hybrid AI for Smart Water Networks
+
+section Setup
+Define Objectives    :done, 2025-05-01, 5d
+Prepare Data         :done, 2025-05-06, 5d
+
+section Development
+GNN Modeling         :active, 2025-05-11, 10d
+PINN Integration     :2025-05-21, 7d
+Pollution Scenarios  :2025-05-28, 5d
+
+section Dissemination
+Prepare GitHub Repo  :2025-06-02, 2d
+Global Summit Slides :2025-06-04, 2d
+
+
+- [x] Import Walkerton EPANET model
+- [x] Add base demand &amp; chlorine decay config
+- [x] Integrate PINN for unknown pipe zones
+- [x] Train GNN on simulated leaks
+- [ ] Implement RL agent for tariff control
+- [ ] Deploy interactive dashboard (Streamlit/Leaflet)
+- [ ] Prepare Horizon Europe proposal PDF&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

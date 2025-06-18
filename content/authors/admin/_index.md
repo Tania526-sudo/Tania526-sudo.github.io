@@ -1,5 +1,5 @@
 ---
-name: Тетяна Старовойт
+name: Tetiana Starovoit
 role: AI Researcher
 avatar: /media/avatar.jpg
 bio: |

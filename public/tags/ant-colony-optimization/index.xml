@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ant Colony Optimization | Hugo Academic CV Theme</title>
+    <link>http://localhost:1313/tags/ant-colony-optimization/</link>
+      <atom:link href="http://localhost:1313/tags/ant-colony-optimization/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ant Colony Optimization</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>Ant Colony Optimization</title>
+      <link>http://localhost:1313/tags/ant-colony-optimization/</link>
+    </image>
+    
+    <item>
+      <title>A Hybrid Model of Artificial Intelligence Integrated into GIS for Predicting Accidents in Water Supply Networks</title>
+      <link>http://localhost:1313/publication/journal-article/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/journal-article/</guid>
+      <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Due to the sensitive nature of the infrastructure involved, &lt;strong&gt;part of the source code and the dataset used in this study are not publicly available&lt;/strong&gt;. These materials are classified under wartime restrictions and relate to critical infrastructure, thus cannot be shared or distributed.&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;This publication is based on research conducted at the Educational and Research Institute for Applied System Analysis (ERIAS) of Igor Sikorsky Kyiv Polytechnic Institute.&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;The proposed hybrid system combines:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ANFIS&lt;/strong&gt;: for fuzzy logic and learning from data;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GA + ACO&lt;/strong&gt;: to optimize fuzzy rule sets and clustering;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GIS&lt;/strong&gt;: for spatial context, visualization, and decision support.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The integration supports water utilities in making informed, predictive decisions regarding accident response and preventive maintenance. Use of metaheuristics improved predictive power while retaining interpretability.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
