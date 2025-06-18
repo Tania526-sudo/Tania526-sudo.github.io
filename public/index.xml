@@ -192,7 +192,7 @@ Global Summit Slides :2025-06-04, 2d
 
 
 
-&lt;div id=&#34;chart-641528379&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-821456937&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -210,7 +210,7 @@ Global Summit Slides :2025-06-04, 2d
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-641528379&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-821456937&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
