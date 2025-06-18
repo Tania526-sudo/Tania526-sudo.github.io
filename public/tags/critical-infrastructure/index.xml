@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Critical Infrastructure | Hugo Academic CV Theme</title>
+    <link>http://localhost:1313/tags/critical-infrastructure/</link>
+      <atom:link href="http://localhost:1313/tags/critical-infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <description>Critical Infrastructure</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>Critical Infrastructure</title>
+      <link>http://localhost:1313/tags/critical-infrastructure/</link>
+    </image>
+    
+    <item>
+      <title>Preprint: Fuzzy-GNN and PINN-based Modeling of Water Infrastructure under SCADA Blackout Conditions</title>
+      <link>http://localhost:1313/publication/preprint/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/preprint/</guid>
+      <description>&lt;p&gt;This preprint builds upon the results of our previous published work on GIS-ANFIS-based accident prediction in water networks.&lt;/p&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-yellow-100 dark:bg-yellow-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-red-400&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0zM12 15.75h.007v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Due to the critical nature of infrastructure data and the wartime conditions in Ukraine, &lt;strong&gt;full access to source code and datasets is restricted&lt;/strong&gt;. Only general architecture and anonymized examples are shared publicly.&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;The proposed model includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fuzzy membership layers on top of graph node attributes&lt;/li&gt;
+&lt;li&gt;Integration of PINN for physical constraint modeling (e.g., Darcy–Weisbach)&lt;/li&gt;
+&lt;li&gt;Compensation mechanisms for missing SCADA sensor inputs&lt;/li&gt;
+&lt;li&gt;NSGA-II multi-objective optimization for valve control&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This approach is applicable in utility AI systems that must remain resilient even during cyber-physical or war-induced infrastructure disruptions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Hybrid Model of Artificial Intelligence Integrated into GIS for Predicting Accidents in Water Supply Networks</title>
+      <link>http://localhost:1313/publication/journal-article/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/journal-article/</guid>
+      <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Due to the sensitive nature of the infrastructure involved, &lt;strong&gt;part of the source code and the dataset used in this study are not publicly available&lt;/strong&gt;. These materials are classified under wartime restrictions and relate to critical infrastructure, thus cannot be shared or distributed.&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;This publication is based on research conducted at the Educational and Research Institute for Applied System Analysis (ERIAS) of Igor Sikorsky Kyiv Polytechnic Institute.&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;The proposed hybrid system combines:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ANFIS&lt;/strong&gt;: for fuzzy logic and learning from data;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GA + ACO&lt;/strong&gt;: to optimize fuzzy rule sets and clustering;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GIS&lt;/strong&gt;: for spatial context, visualization, and decision support.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The integration supports water utilities in making informed, predictive decisions regarding accident response and preventive maintenance. Use of metaheuristics improved predictive power while retaining interpretability.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

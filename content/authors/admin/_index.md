@@ -1,5 +1,5 @@
 ---
-name: Тетяна Старовойт
+name: Tetiana Starovoit
 role: AI Researcher
 avatar: /media/avatar.jpg
 bio: |
@@ -23,8 +23,7 @@ organizations:
     url: https://kpi.ua
   - name: National University of Water and Environmental Engineering
     url: https://nuwm.edu.ua
-  - name: Horizon Europe Researcher
-    url: https://research-and-innovation.ec.europa.eu
+  
 
 # Contact and social links
 profiles:
